@@ -1,0 +1,43 @@
+{
+  "name": "DataSource",
+  "fields": [
+    {
+      "fieldName": "datasourceId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValues": "ACTIVE,ARCHIVED,DRAFT,SCHEDULING,SCHEDULED,STOPPING,STOPPED,RESUMING"
+    },
+    {
+      "fieldName": "schedule",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "configuration",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "version",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201209054533",
+  "entityTableName": "data_source",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "dataintegration1",
+  "applications": "*",
+  "microserviceName": "dataintegration1"
+}
