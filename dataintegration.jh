@@ -1,0 +1,21 @@
+entity DataSource {
+	datasourceId Long,
+    name String,
+	status Status,
+    schedule String,
+    configuration String,
+    version Integer
+}
+
+enum Status {
+    ACTIVE, ARCHIVED, DRAFT, SCHEDULING, SCHEDULED, STOPPING, STOPPED, RESUMING
+}
+
+paginate DataSource with infinite-scroll
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+// Set an angular suffix
+// angularSuffix * with mySuffix
