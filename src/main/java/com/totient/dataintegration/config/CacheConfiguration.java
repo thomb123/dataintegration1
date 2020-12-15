@@ -40,6 +40,8 @@ public class CacheConfiguration {
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {
+            createCache(cm, com.totient.dataintegration.domain.DataSource.class.getName());
+            createCache(cm, com.totient.dataintegration.domain.ProcessGroupTemplate.class.getName());
             // jhipster-needle-caffeine-add-entry
         };
     }
