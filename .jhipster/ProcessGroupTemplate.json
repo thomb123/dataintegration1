@@ -1,0 +1,63 @@
+{
+  "name": "ProcessGroupTemplate",
+  "fields": [
+    {
+      "fieldName": "processGroupTemplateId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "registryId",
+      "fieldType": "UUID",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "bucketId",
+      "fieldType": "UUID",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "flowId",
+      "fieldType": "UUID",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "processGroupVersion",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "recordStatus",
+      "fieldType": "RecordStatus",
+      "fieldValues": "ACTIVE,ARCHIVED,DRAFT,DELETED"
+    },
+    {
+      "fieldName": "version",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201216141407",
+  "entityTableName": "process_group_template",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "dataintegration1",
+  "applications": "*",
+  "microserviceName": "dataintegration1"
+}
