@@ -1,0 +1,11 @@
+id;process_group_template_id;name;registry_id;bucket_id;flow_id;process_group_version;record_status;version
+1;82946;back up invoice Intelligent;e7fc0a68-961a-4e1b-9aea-59ca9e6eb5cb;0f922ab1-f62b-475f-a105-f7ee645a797c;e0cba7cd-f952-4c83-ad0c-3733043daa90;98256;DELETED;78846
+2;14838;Pants IB Distributed;75f0d79c-6868-407a-b945-caa2caa80313;27b5474c-78ee-4be3-af7d-d5a369eac751;54b65f54-1280-499e-a5ef-5c2babad2037;29915;DRAFT;85900
+3;89240;Shoes;6972f83b-df61-44c9-ba62-7ab3af551c2a;6b091a64-525a-4ec5-ab15-1f96d99b90a8;5ff6204a-adbd-4a0e-b391-a6680ba3bd5f;84563;DRAFT;5069
+4;39656;Avon Steel AGP;b30eef91-9e41-4a7e-8c7c-153b9283f9ee;b0d5d75d-7a19-4034-a91a-d529d6f9d2f9;d514905a-1c72-437a-a4eb-136e06a6aabb;85066;DELETED;78445
+5;40357;Cambridgeshire compress;db00bd13-abf5-4ec6-b9bd-415b6238ab91;2c28fad6-da54-4e85-aa84-8aa9fe91ea02;2ec27330-f202-42e2-a244-5e6fbe6b3cc1;59210;DRAFT;98275
+6;6510;Rubber neural;e655b06e-161c-4a12-827f-54e282b9535a;012d1251-9b05-4cad-8e35-eefc1e234a9c;ec58ce91-cdcd-437a-a7c3-f87c73d9c447;49024;DRAFT;10933
+7;76422;end-to-end;efbf24c7-9cf9-470d-8b24-9ba4e4bd5ac4;d76d8b02-aa45-43c6-893c-b47aecdd4ff5;7cab393e-51f6-45e4-9c06-09ae34b72537;31413;ARCHIVED;27418
+8;46153;toolset Mississippi;8c0a3648-7cd1-48a4-87c3-a1cfdcd7414e;116bcb0d-bd1f-4965-aac6-4c5d9006dc05;a8c1d080-fb75-4c6b-ab00-5443de69c0cb;12120;ACTIVE;62737
+9;84559;Monitored Progressive;81714d3e-3a37-4d8c-a7a0-63eaa275fb68;9f8d97f9-09d5-4aaa-9b5b-ceee4df95c51;dbdd892f-b9dd-4aa0-855e-51f35c00dba5;46438;DELETED;92738
+10;10068;database Awesome Avon;37c8faad-87c4-41c8-9d1c-99ad200c4c08;785057a6-a3c8-4e99-b4c8-fea107d3708f;5cccf467-2306-48b4-a0dd-78085fd075b7;19709;ACTIVE;92939
