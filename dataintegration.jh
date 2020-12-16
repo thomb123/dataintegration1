@@ -1,0 +1,42 @@
+entity DataSource {
+	datasourceId Long,
+    name String required,
+	status Status,
+    processGroupId UUID,
+    schedule String,
+    configuration String,
+    recordStatus RecordStatus,
+    version Integer
+}
+
+entity ProcessGroupTemplate {
+	processGroupTemplateId Long,
+    name String required,
+    registryId UUID required,
+    bucketId UUID required,
+    flowId UUID required,
+    processGroupVersion Integer,
+    recordStatus RecordStatus,
+    version Integer
+}
+
+enum Status {
+    ACTIVE, SCHEDULING, SCHEDULED, STOPPING, STOPPED, RESUMING
+}
+
+enum RecordStatus {
+    ACTIVE, ARCHIVED, DRAFT, DELETED
+}
+relationship ManyToOne {
+	 DataSource{processGroupTemplate} to  ProcessGroupTemplate
+}
+
+paginate DataSource with infinite-scroll
+paginate ProcessGroupTemplate with infinite-scroll
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+// Set an angular suffix
+// angularSuffix * with mySuffix

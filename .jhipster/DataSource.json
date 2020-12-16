@@ -1,0 +1,63 @@
+{
+  "name": "DataSource",
+  "fields": [
+    {
+      "fieldName": "datasourceId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValues": "ACTIVE,SCHEDULING,SCHEDULED,STOPPING,STOPPED,RESUMING"
+    },
+    {
+      "fieldName": "processGroupId",
+      "fieldType": "UUID"
+    },
+    {
+      "fieldName": "schedule",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "configuration",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "recordStatus",
+      "fieldType": "RecordStatus",
+      "fieldValues": "ACTIVE,ARCHIVED,DRAFT,DELETED"
+    },
+    {
+      "fieldName": "version",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "processGroupTemplate",
+      "otherEntityRelationshipName": "dataSource",
+      "relationshipName": "processGroupTemplate",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201216144509",
+  "entityTableName": "data_source",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "dataintegration1",
+  "applications": "*",
+  "microserviceName": "dataintegration1"
+}
